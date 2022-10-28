@@ -1,0 +1,58 @@
+
+head, main, footer, nav, article, section, div{
+    border: 1px solid gray;
+    padding: 10px;
+}
+nav ul{
+    grid-template-columns: 10fr 1fr 1fr;
+    display: grid;
+    
+}
+*{
+    box-sizing: border-box;
+}
+nav ul a{
+    
+}
+nav ul li{
+    list-style: none;
+    border: 1px solid black;
+}
+#piros{
+    background-color: red;
+}
+nav{
+    background-color:  grey;
+    border: 1px solid black;
+}
+.kiskep{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    padding: 1px;
+}
+.kiskep img, .nagykep img{
+    width: 100%;
+}
+@media screen and  (max-width:800px){
+.kiskep{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+nav ul{
+ grid-template-columns: 1fr ;
+ display: grid;
+}
+}
+@media screen and (max-width:500px) {
+    .kiskep{
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+    nav ul{
+        grid-template-columns: 1fr ;
+        display: grid;
+    }
+}
+a{
+    color: rgb(68, 0, 0);
+}
